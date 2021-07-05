@@ -44,8 +44,8 @@ Run `protoc --version` once that's done to verify it is installed. You should ge
 
 Now that we’ve installed all the packages, we need to set up the TensorFlow directory. Move back to your home directory, then make a directory called “tensorflow1”, and cd into it.
 ```
-mkdir tensorflow1
-cd tensorflow1
+mkdir TensorFlow
+cd TensorFlow
 ```
 Download the tensorflow repository from GitHub by issuing:
 ```
@@ -57,16 +57,16 @@ sudo nano ~/.bashrc
 ```
 Move to the end of the file, and on the last line, add:
 ```
-export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow1/models/research:/home/pi/tensorflow1/models/research/slim
+export PYTHONPATH=$PYTHONPATH:/home/pi/TensorFlow/models/research:/home/pi/TensorFlow/models/research/slim
 ```
 Now, we need to use Protoc to compile the Protocol Buffer (.proto) files used by the Object Detection API. The .proto files are located in /research/object_detection/protos, but we need to execute the command from the /research directory. Issue:
 ```
-cd /home/pi/tensorflow1/models/research
+cd /home/pi/TensorFlow/models/research
 protoc object_detection/protos/*.proto --python_out=.
 ```
 This command converts all the "name".proto files to "name_pb2".py files. Next, move into the object_detection directory:
 ```
-cd /home/pi/tensorflow1/models/research/object_detection
+cd /home/pi/TensorFlow/models/research/object_detection
 ```
 Now, we’ll download the SSD_Lite model from the [TensorFlow detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). The model zoo is Google’s collection of pre-trained object detection models that have various levels of speed and accuracy. The Raspberry Pi has a weak processor, so we need to use a model that takes less processing power. Though the model will run faster, it comes at a tradeoff of having lower accuracy. For this tutorial, we’ll use SSDLite-MobileNet, which is the fastest model available. 
 
