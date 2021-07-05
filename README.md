@@ -83,6 +83,7 @@ If you’re using a Picamera, make sure it is enabled in the Raspberry Pi config
 Download the Object_detection_picamera.py file into the object_detection directory by issuing:
 ```
 wget https://github.com/AbhishekTyagi404/Object-Detection-on-Raspberry-Pi-with-obstacle-avoiding-rover/blob/main/Object_Detection_Pi_Camera
+```
 Run the script by issuing: 
 ```
 python3 Object_detection_picamera.py 
