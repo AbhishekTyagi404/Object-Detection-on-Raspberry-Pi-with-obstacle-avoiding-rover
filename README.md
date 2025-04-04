@@ -120,7 +120,8 @@ Detection should initialize within 30 seconds and display real-time bounding box
 
 For collaboration or questions:  
 📧 mechatronics.abhishek@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/abhishekt404/)
+🔗 [LinkedIn](https://www.linkedin.com/in/-abhishek-tyagi/)
+🔗 [Portfolio](https://kritrimintelligence.com/abhishek-tyagi/)
 
 ---
 
