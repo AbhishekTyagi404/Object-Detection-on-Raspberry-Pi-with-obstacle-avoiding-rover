@@ -2,7 +2,7 @@
 
 ## 📸 Project Architecture
 
-![Modular Edge-AI System Architecture: Object detection is performed on-device using Coral Edge TPU, with GPS tagging and MQTT-based real-time data transmission to a centralized monitoring server for surveillance, mobility analysis, and incident logging.](https://github.com/AbhishekTyagi404/Object-Detection-on-Raspberry-Pi-with-obstacle-avoiding-rover/blob/main/Images/Final%20Project%20Images.png)
+![Modular Edge-AI System Architecture: Object detection is performed on-device using Coral Edge TPU, with GPS tagging and MQTT-based real-time data transmission to a centralized monitoring server for surveillance, mobility analysis, and incident logging.](https://github.com/AbhishekTyagi404/Object-Detection-on-Raspberry-Pi-with-obstacle-avoiding-rover/blob/main/Future_SmartRover/ProjectArchitecture.png)
 
 ## 1. TPU Integration (Coral USB Accelerator)
 - Use PyCoral API
